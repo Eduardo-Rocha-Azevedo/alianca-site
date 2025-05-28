@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow: #fdbf5c;
+  --orange: #f69a0b;
+  --red: #d43a00;
+  --darkRed: #9b0800;
+  --darkBlue: #1d2440;
+  --dark-900: #1c1c1c;
+  --surface: var(--dark-900);
+}
+
+/* From Uiverse.io by Cevorob */ 
+
