@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
    --yellow: #fdbf5c;
   --orange: #FF7500;
@@ -10,10 +10,13 @@
 }
 a{
   text-decoration: none;
-  
+  font-family: 'Montserrat', serif;
+   text-transform: uppercase;
+   font-size: 1px;
 }
 a:visited {
   text-decoration: none;
+ 
 }
 header {
   background-color: var(--surface);
@@ -24,11 +27,15 @@ header {
 header img {
   width: 100px;
   height: auto;
+  margin-top: 5px;
   
 }
 header.rolagem {
   background-color: var(--lightBlue);
   transition: 0.5s;
+}
+.hamburguer {
+  display: none;
 }
 
 .nav{
