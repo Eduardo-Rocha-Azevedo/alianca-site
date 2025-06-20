@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +14,8 @@
   --darkBlue: #1d2440;
   --dark-900: #1c1c1c;
   --surface: var(--dark-900);
+  --white: #f4efea;
 }
-
-
 
 .container {
   display: grid;
@@ -28,7 +27,7 @@
   background: #fff;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
@@ -42,7 +41,6 @@
   margin: 5px 0;
   color: #555;
 }
-
 
 h1 {
   text-align: center;
@@ -63,20 +61,52 @@ select#bairroSelect {
   border-radius: 5px;
 }
 
+.apresentacao {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+ background-color: var(--dark-900);
+}
 
+.flex-container {
+  display: flex;
+  flex-direction: row; /* lado a lado */
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.text {
+  color: var(--white);
+  max-width: 60%;
+  font-family: 'Inter', sans-serif;
+  font-size: 45px;
+  margin: 56px;
+}
+
+span{
+  color: var(--orange);
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  
+}
+
+.flex-container img {
+  max-width: 50%;
+  height: auto;
+  
+}
 
 .container-cards {
-  display: flex;           /* Organiza os filhos em linha */
-  gap: 16px;               /* Espaçamento entre os cards */
-  overflow-x: auto;        /* Barra de rolagem horizontal, se necessário */
+  display: flex; /* Organiza os filhos em linha */
+  gap: 16px; /* Espaçamento entre os cards */
+  overflow-x: auto; /* Barra de rolagem horizontal, se necessário */
   padding: 10px;
 }
 
 .card {
-  flex: 0 0 auto;          /* Impede que o card encolha ou cresça */
-  width: 200px;            /* Largura fixa para cada card */
+  flex: 0 0 auto; /* Impede que o card encolha ou cresça */
+  width: 200px; /* Largura fixa para cada card */
   border: 1px solid #ccc;
   padding: 16px;
   box-sizing: border-box;
 }
-
